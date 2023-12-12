@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+import "normalize.css"
 // const appConfig = useAppConfig()
 // console.log(appConfig.title, appConfig.theme)
 
@@ -15,6 +16,8 @@ useHead({
 </script>
 
 <style>
+@import "~/assets/css/index.scss";
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;

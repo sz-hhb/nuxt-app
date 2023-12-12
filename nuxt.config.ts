@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" }
   },
+  modules: ["@element-plus/nuxt"],
+  elementPlus: {
+    /** Options */
+  },
   vite: {
     css: {
       preprocessorOptions: {
