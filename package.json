@@ -28,6 +28,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "nuxt": "^3.14.1592",
+    "postcss-px-to-viewport-8-plugin": "^1.2.5",
     "prettier": "^3.4.2"
   }
 }
