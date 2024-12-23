@@ -1,5 +1,4 @@
 import { useFetch } from "nuxt/app"
-import type { AsyncData, UseFetchOptions } from "nuxt/app"
 
 const BASE_URL = "http://localhost:3001"
 
