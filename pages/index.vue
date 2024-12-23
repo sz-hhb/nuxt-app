@@ -15,6 +15,7 @@
     <button @click="setLocale('zh-Hant')">zh-Hant</button>
     <button @click="setLocale('en')">en</button>
     <h2>{{ t("public") }}</h2>
+    <van-button type="primary" @click="showToast('toast')">button</van-button>
   </div>
 </template>
 

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-12-21",
   devtools: { enabled: true },
   css: ["animate.css"],
-  modules: ["@pinia/nuxt", "@nuxtjs/i18n", "@nuxt/eslint"],
+  modules: ["@pinia/nuxt", "@vant/nuxt", "@nuxtjs/i18n", "@nuxt/eslint"],
   vite: {
     css: {
       preprocessorOptions: {
