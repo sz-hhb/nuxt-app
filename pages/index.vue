@@ -15,7 +15,7 @@
     <button @click="setLocale('zh-Hant')">zh-Hant</button>
     <button @click="setLocale('en')">en</button>
     <h2>{{ t("public") }}</h2>
-    <van-button type="primary" @click="showToast('toast')">button</van-button>
+    <van-button class="btn" type="primary" @click="showToast('toast')">button</van-button>
   </div>
 </template>
 
@@ -31,4 +31,8 @@ useHead({
 const res = await getAboutMessage()
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.btn {
+  width: 100%;
+}
+</style>
