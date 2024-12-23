@@ -33,6 +33,6 @@ const res = await getAboutMessage()
 
 <style scoped lang="scss">
 .btn {
-  width: 100%;
+  width: 750px;
 }
 </style>
