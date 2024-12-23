@@ -15,12 +15,13 @@
     <button @click="setLocale('zh-Hant')">zh-Hant</button>
     <button @click="setLocale('en')">en</button>
     <h2>{{ t("public") }}</h2>
-    <van-button class="btn" type="primary" @click="showToast('toast')">button</van-button>
+    <van-button class="btn" type="primary" @click="btnClick">button</van-button>
   </div>
 </template>
 
 <script setup lang="ts">
 import { getAboutMessage } from "@/service/about"
+import { showToast } from "vant"
 
 const { t, setLocale } = useI18n()
 
@@ -29,10 +30,16 @@ useHead({
 })
 
 const res = await getAboutMessage()
+
+const btnClick = () => {
+  showToast("12345")
+}
 </script>
 
 <style scoped lang="scss">
 .btn {
   width: 750px;
+  height: 100px;
+  font-size: 36px;
 }
 </style>
