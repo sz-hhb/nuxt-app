@@ -1,15 +1,15 @@
 <template>
-    <div>{{ postId }}</div>
+  <div>{{ postId }}</div>
 </template>
 
 <script lang="ts" setup>
 import { useRoute } from "vue-router"
 
 definePageMeta({
-    validate: async (route) => {
-        // 检查id是否由数字组成
-        return /^\d+$/.test(route.params.id as string)
-    }
+  validate: async (route) => {
+    // 检查id是否由数字组成
+    return /^\d+$/.test(route.params.id as string)
+  }
 })
 
 const route = useRoute()
