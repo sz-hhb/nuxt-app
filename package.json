@@ -24,6 +24,9 @@
     "@nuxt/eslint": "^0.7.4",
     "@nuxtjs/i18n": "^9.0.0-rc.2",
     "eslint": "^9.17.0",
-    "nuxt": "^3.14.1592"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nuxt": "^3.14.1592",
+    "prettier": "^3.4.2"
   }
 }

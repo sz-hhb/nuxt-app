@@ -1,0 +1,8 @@
+/.nuxt/**
+/.output/**
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*

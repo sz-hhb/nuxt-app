@@ -10,6 +10,7 @@
       </nav>
     </header>
     <h1>{{ res.data.msg }}</h1>
+    <h1>{{ res.data.name }}</h1>
     <button @click="setLocale('zh-Hans')">zh-Hans</button>
     <button @click="setLocale('zh-Hant')">zh-Hant</button>
     <button @click="setLocale('en')">en</button>
