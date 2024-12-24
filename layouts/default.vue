@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-page">
+  <div class="layout-page ignore-max-width">
     <slot />
     <van-tabbar v-model="active">
       <van-tabbar-item to="/" icon="home-o">首页</van-tabbar-item>
@@ -37,5 +37,9 @@ watch(
   padding-bottom: 120px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.ignore-max-width {
+  max-width: 768px;
 }
 </style>
