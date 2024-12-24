@@ -36,7 +36,9 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       "postcss-pxtorem": {
-        rootValue: 75,
+        rootValue({ file }: { file: any }) {
+          return file.indexOf("vant") !== -1 ? 37.5 : 75
+        },
         propList: ["*"]
       }
     }
