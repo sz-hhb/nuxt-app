@@ -21,6 +21,7 @@ watch(
   () => route.path,
   (newVal) => {
     ROUTE_LIST.forEach((item, index) => {
+      // 匹配当前路径，获取索引
       if (item === newVal) {
         active.value = index
       }
