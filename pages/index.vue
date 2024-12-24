@@ -1,45 +1,15 @@
 <template>
-  <div>
-    <header>
-      <nav>
-        <ul>
-          <li><NuxtLink to="/about">关于</NuxtLink></li>
-          <li><NuxtLink to="/posts/1">文章1</NuxtLink></li>
-          <li><NuxtLink to="/posts/2">文章2</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
-    <h1>{{ res.data.msg }}</h1>
-    <h1>{{ res.data.name }}</h1>
-    <button @click="setLocale('zh-Hans')">zh-Hans</button>
-    <button @click="setLocale('zh-Hant')">zh-Hant</button>
-    <button @click="setLocale('en')">en</button>
-    <h2>{{ t("public") }}</h2>
-    <van-button class="btn" type="primary" @click="btnClick">button</van-button>
-  </div>
+  <div class="text">123</div>
 </template>
 
 <script setup lang="ts">
-import { getAboutMessage } from "@/service/about"
-import { showToast } from "vant"
-
-const { t, setLocale } = useI18n()
-
 useHead({
   title: "首页"
 })
-
-const res = await getAboutMessage()
-
-const btnClick = () => {
-  showToast("12345")
-}
 </script>
 
 <style scoped lang="scss">
-.btn {
-  width: 750px;
-  height: 100px;
-  font-size: 36px;
+.text {
+  font-size: 48px;
 }
 </style>
