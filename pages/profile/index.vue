@@ -1,5 +1,5 @@
 <template>
-  <div>关于</div>
+  <div>Profile</div>
 </template>
 
 <script lang="ts" setup></script>

@@ -1,16 +1,10 @@
 <template>
   <div>
-    <van-nav-bar title="标题" left-text="返回" left-arrow>
-      <template #right>
-        <van-icon name="search" size="18" />
-      </template>
-    </van-nav-bar>
     <slot />
     <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="search">标签</van-tabbar-item>
-      <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+      <van-tabbar-item to="/" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item to="/about" icon="search">关于</van-tabbar-item>
+      <van-tabbar-item to="/profile" icon="friends-o">个人</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
@@ -19,6 +13,21 @@
 import { ref } from "vue"
 
 const active = ref(0)
+
+const route = useRoute()
+const ROUTE_LIST = ["/", "/about", "profile"]
+
+watch(
+  () => route.path,
+  (newVal) => {
+    ROUTE_LIST.forEach((item, index) => {
+      if (item === newVal) {
+        active.value = index
+      }
+    })
+  },
+  { immediate: true }
+)
 </script>
 
 <style lang="scss" scoped></style>
