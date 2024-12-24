@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout-page">
     <slot />
     <van-tabbar v-model="active">
       <van-tabbar-item to="/" icon="home-o">首页</van-tabbar-item>
@@ -31,4 +31,11 @@ watch(
 )
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.layout-page {
+  width: 750px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+</style>
