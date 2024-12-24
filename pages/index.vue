@@ -1,5 +1,5 @@
 <template>
-  <div class="text">123</div>
+  <div></div>
 </template>
 
 <script setup lang="ts">
@@ -8,8 +8,4 @@ useHead({
 })
 </script>
 
-<style scoped lang="scss">
-.text {
-  font-size: 48px;
-}
-</style>
+<style scoped lang="scss"></style>
