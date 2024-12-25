@@ -13,7 +13,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL
 const fetch = async <T = any>(
   url: string,
   options: { [key: string]: any },
-  contentType: string | null = "application/json; charset=utf-8",
+  contentType: string | undefined = "application/json; charset=utf-8",
   uniqueKey: string = url
 ): Promise<Result<T>> => {
   let headers: { [key: string]: any } = {}
