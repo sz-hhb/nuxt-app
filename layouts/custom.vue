@@ -1,5 +1,5 @@
 <template>
-  <div class="common-page ignore-max-width">
+  <div class="common-page">
     <slot />
   </div>
 </template>
@@ -12,9 +12,5 @@
   padding-bottom: 120px;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.ignore-max-width {
-  max-width: 768px;
 }
 </style>
