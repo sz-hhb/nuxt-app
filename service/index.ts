@@ -1,12 +1,6 @@
 import { useFetch } from "nuxt/app"
 
-const BASE_URL = "http://localhost:3001"
-
-interface Result<T> {
-  code: number
-  data: T
-  message: string
-}
+const BASE_URL = import.meta.env.VITE_BASE_URL
 
 /**
  * 请求函数
