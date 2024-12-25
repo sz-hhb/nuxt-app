@@ -50,23 +50,23 @@ const fetch = async <T = any>(
   })
 }
 
-const get = <T>(url: string, param?: any) => {
+const get = <T>(url: string, param?: any): Promise<Result<T>> => {
   return fetch<T>(url, { method: "get", param })
 }
 
-const post = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url) => {
+const post = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url): Promise<Result<T>> => {
   return fetch<T>(url, { method: "post", body }, contentType, uniqueKey)
 }
 
-const put = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url) => {
+const put = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url): Promise<Result<T>> => {
   return fetch<T>(url, { method: "put", body }, contentType, uniqueKey)
 }
 
-const del = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url) => {
+const del = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url): Promise<Result<T>> => {
   return fetch<T>(url, { method: "delete", body }, contentType, uniqueKey)
 }
 
-const patch = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url) => {
+const patch = <T>(url: string, body?: any, contentType?: string, uniqueKey: string = url): Promise<Result<T>> => {
   return fetch<T>(url, { method: "patch", body }, contentType, uniqueKey)
 }
 

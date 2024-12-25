@@ -22,4 +22,8 @@ const btnClick = () => {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.btn {
+  width: 750px;
+}
+</style>
