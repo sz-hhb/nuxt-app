@@ -1,4 +1,5 @@
 import { useFetch } from "nuxt/app"
+import type { _AsyncData } from "nuxt/dist/app/composables/asyncData"
 
 const BASE_URL = import.meta.env.VITE_BASE_URL
 
@@ -30,7 +31,7 @@ const fetch = async <T = any>(
         options.headers = { ...options.headers, ...headers }
       }
     })
-      .then(({ data, error }) => {
+      .then(({ data, error }: _AsyncData<any, any>) => {
         if (!data || error?.value) {
           return reject(error?.value)
         }
