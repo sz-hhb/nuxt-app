@@ -36,7 +36,6 @@ const fetch = async <T = any>(
           return reject(error?.value)
         }
 
-        // toRaw 是一个用于获取响应式对象原始值的函数
         const dataRes = data?.value as Result<T>
 
         if (!dataRes) {
