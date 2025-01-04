@@ -5,9 +5,6 @@
     <h1>{{ res.data.msg }}</h1>
     <h2>{{ res.data.name }}</h2>
     <van-button class="btn" type="primary" @click="btnClick">主要按钮</van-button>
-    <van-popup v-model:show="showBottom" class="bottom-popup" round position="bottom" safe-area-inset-bottom>
-      123
-    </van-popup>
   </div>
 </template>
 
@@ -26,8 +23,7 @@ const res = await getAboutMessage()
 const showBottom = ref(false)
 
 const btnClick = () => {
-  showBottom.value = true
-  // showSuccessToast("Success")
+  showSuccessToast("Success")
 }
 </script>
 
