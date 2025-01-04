@@ -12,15 +12,12 @@
 import { getAboutMessage } from "@/service/about"
 import { showSuccessToast } from "vant"
 
-const { t } = useI18n()
-
 useHead({
   title: "首页"
 })
 
+const { t } = useI18n()
 const res = await getAboutMessage()
-
-const showBottom = ref(false)
 
 const btnClick = () => {
   showSuccessToast("Success")
