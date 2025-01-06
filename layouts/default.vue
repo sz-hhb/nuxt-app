@@ -39,5 +39,11 @@ watch(
   padding-bottom: 120px;
   margin: 0 auto;
   overflow: hidden;
+
+  .van-tabbar {
+    width: 750px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 </style>
