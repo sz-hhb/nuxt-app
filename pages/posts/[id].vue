@@ -3,8 +3,6 @@
 </template>
 
 <script lang="ts" setup>
-import { useRoute } from "vue-router"
-
 definePageMeta({
   validate: async (route) => {
     // 检查id是否由数字组成
