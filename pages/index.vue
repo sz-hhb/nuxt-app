@@ -5,7 +5,7 @@
     <h1>{{ res.data.msg }}</h1>
     <h2>{{ res.data.name }}</h2>
     <van-button class="btn" type="primary" @click="btnClick">主要按钮</van-button>
-    <loading v-if="false" />
+    <loading v-if="true" />
   </div>
 </template>
 
