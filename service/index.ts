@@ -1,4 +1,5 @@
 import { useFetch } from "nuxt/app"
+import { useLogger } from "@nuxt/kit"
 import type { _AsyncData } from "nuxt/dist/app/composables/asyncData"
 
 const BASE_URL = import.meta.env.VITE_BASE_URL
@@ -45,7 +46,9 @@ const fetch = async <T = any>(
         return resolve(dataRes)
       })
       .catch((err) => {
-        console.log(`[error]:${err}`, `[url]:${url}`)
+        const logger = useLogger("Api-Module")
+        logger.error(`[url]:${url}`, `[error]:${err}`)
+        // console.log(`[url]:${url}`, `[error]:${err}`)
       })
   })
 }
